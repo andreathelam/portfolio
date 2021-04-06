@@ -1,0 +1,66 @@
+<body>
+
+    
+    <!-- HEADER -->
+    <header id="header">
+      <div class="inner_header">
+    
+      <div class="logo_container">
+          <a href="index.html"><img src="assets/A(logo)_trans.png" alt="Andrea's logo" width=65></a>
+      </div>
+
+      
+      <nav>
+        <ul class="navmenu">
+          <li><a [routerLink]="['/home']" fragment="title" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to projects section"></a></li>
+          <li>
+            <div class="dropdown">              
+             <a class="dropbtn" [routerLink]="['/home']" fragment="projects" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to projects section"><span>WORK</span></a>
+              <div class="dropdown-content">
+                <a [routerLink]="['/home']" fragment="projects" title="link to projects section"><span>PROJECTS</span></a>
+                <a [routerLink]="['/home']" fragment="graphics" title="link to projects section"><span>GRAPHICS</span></a>
+              </div>
+            </div>
+          </li>
+          <li><a [routerLink]="['/about']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to about page"><span>ABOUT</span></a></li>
+          <li><a href="assets/Lam_Andrea_Resume_2021.pdf" target="_blank" title="link to Andrea's resume"><span>RESUME</span></a></li>
+        </ul>
+      </nav>
+    
+      
+      </div>
+    
+    </header>
+
+    
+    <!-- MOBILE HEADER -->
+    <header id="mobile_header">
+    <div class="mobile_inner_header">
+      <div class="mobile_logo_container">
+        <a href="index.html"><img src="assets/A(logo)_trans.png" alt="Andrea's logo" width=65></a>
+      </div>
+      <!--Hamburger icon -->
+      <div id="toggle_icon" (click)="open_menu()">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div id="overlay" style="display: none;">
+      
+        <div id="close_icon" (click)="close_menu()">
+          <i class="fa fa-close"></i>
+        </div>
+        <nav class="navmenu_overlay">
+          <ul>
+            <li (click)="close_menu()"><a [routerLink]="['/home']" fragment="projects" title="link to projects section"><span>PROJECTS</span></a></li>
+            <li (click)="close_menu()"><a [routerLink]="['/home']" fragment="graphics" title="link to projects section"><span>GRAPHICS</span></a></li>
+            <li (click)="close_menu()"><a [routerLink]="['/about']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to about page"><span>ABOUT</span></a></li>
+            <li><a href="assets/Lam_Andrea_Resume.pdf" target="_blank" title="link to Andrea's resume"><span>RESUME</span></a></li>
+          </ul>
+        </nav>
+    
+      </div>
+    
+    </div>
+    </header>
+
+
+</body>    
