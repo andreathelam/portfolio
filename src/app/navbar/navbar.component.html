@@ -6,19 +6,19 @@
       <div class="inner_header">
     
       <div class="logo_container">
-          <a href="index.html"><img src="assets/A(logo)_trans.png" alt="Andrea's logo" width=65></a>
+          <a [routerLink]="['/home']" fragment="title" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to home"><img src="assets/A(logo)_trans.png" alt="Andrea's logo" width=65></a>
       </div>
 
       
       <nav>
         <ul class="navmenu">
-          <li><a [routerLink]="['/home']" fragment="title" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to projects section"></a></li>
+          <li><a [routerLink]="['/home']" fragment="title" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to home"></a></li>
           <li>
             <div class="dropdown">              
              <a class="dropbtn" [routerLink]="['/home']" fragment="projects" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" title="link to projects section"><span>WORK</span></a>
               <div class="dropdown-content">
                 <a [routerLink]="['/home']" fragment="projects" title="link to projects section"><span>PROJECTS</span></a>
-                <a [routerLink]="['/home']" fragment="graphics" title="link to projects section"><span>GRAPHICS</span></a>
+                <a [routerLink]="['/home']" fragment="graphics" title="link to graphics section"><span>GRAPHICS</span></a>
               </div>
             </div>
           </li>
