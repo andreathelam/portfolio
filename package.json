@@ -1,6 +1,7 @@
 {
   "name": "andrea-portfolio",
   "version": "0.0.0",
+  "homepage": "andrea-lam.com",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
