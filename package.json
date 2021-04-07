@@ -1,7 +1,7 @@
 {
   "name": "andrea-portfolio",
   "version": "0.0.0",
-  "homepage": "andrea-lam.com",
+  "homepage": "https://andreathelam.github.io/portfolio/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
