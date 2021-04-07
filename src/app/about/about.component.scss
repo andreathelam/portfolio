@@ -409,8 +409,10 @@
                 padding: 20px;
                 margin: 15px;
 
-                #program {
-                    margin-left: -10px;
+                #programs {
+                    ul {
+                        margin-left: -20px;
+                    }
                 }
                 
                 img {

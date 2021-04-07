@@ -44,6 +44,9 @@
             align-self: center;
             border-radius: 10px;
             margin: 10px 20px;
+            :hover {
+                cursor: pointer;
+            }
 
             h4 {
                 font-size: 18px;
@@ -72,6 +75,9 @@
             width: 30%;
             border-radius: 10px;
             margin: 0px 20px;
+            :hover {
+                cursor: pointer;
+            }
 
             h4 {
                 font-size: 18px;

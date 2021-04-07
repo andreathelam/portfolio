@@ -301,12 +301,34 @@ body, html {
 
 }
 
+/* FONTS */
+@font-face {
+    font-family: Nunito-Bold;
+    src: url(~/assets/font/Nunito-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-Italic;
+    src: url(~/assets/font/Nunito-Italic.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-ExtraBold;
+    src: url(~/assets/font/Nunito-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(~/assets/font/Nunito-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: Nunito-SemiBold;
+    src: url(~/assets/font/Nunito-SemiBold.ttf) format("truetype");
+}
+strong { font-family: Nunito-Bold; }
+
 
 mark {
     background-color: #FCE58C;
     color: black;
 }
-
 
 .btn {
     border: none;
@@ -323,11 +345,6 @@ mark {
         background-color: #fce68c00;
     }
 }
-
-
-
-
-
 
 .viewmore {
     display: table-cell;
