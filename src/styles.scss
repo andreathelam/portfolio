@@ -214,6 +214,9 @@ body, html {
         display: table-cell;
         vertical-align: middle;
         height: 100%;
+        :hover, :active {
+            background-color: #fce68c00;
+        }
     }
     .navmenu a:last-child {
         padding-right: 0;
@@ -315,6 +318,12 @@ mark {
     width: 100%;
     height: auto;
 }
+.logo_container a {
+    :hover, :active {
+        background-color: #fce68c00;
+    }
+}
+
 
 
 
