@@ -21,7 +21,14 @@
 
 
     <section class="grow_title">
-        <img src="assets/grow_hero.png" alt="Grow Project hero" class="responsive">
+        <picture>
+            <source media="(min-width: 1900px)" srcset="assets/grow/grow_hero_big.png" alt="Grow Project hero" class="responsive">
+            <source media="(min-width: 992px)" srcset="assets/grow/grow_hero.png" alt="Grow Project hero" class="responsive">
+            <source media="(min-width: 600px)" srcset="assets/grow/grow_hero_med.png"  alt="Grow Project hero" class="responsive">
+            <source media="(max-width: 599px)" srcset="assets/grow/grow_hero_sm.png" alt="Grow Project hero" class="responsive">
+            <img src="assets/grow/grow_hero.png" alt="Grow Project hero" class="responsive">
+        </picture>
+
     </section>
 
     <!-- PROJECT OVERVIEW -->
