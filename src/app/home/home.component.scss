@@ -34,6 +34,17 @@
       }
     }
   }
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 14px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
   /* PROJECTS */
   .projects_container {
     background-color: #F3F3F3;
@@ -240,6 +251,17 @@
       }
     }
   }
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 14px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
   .projects_container {
     background-color: #F3F3F3;
     width: 100%;
@@ -446,6 +468,18 @@
       }
     }
   }
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 14px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
+
   /* PROJECTS */
   .projects_container {
     background-color: #F3F3F3;
@@ -690,6 +724,24 @@
 
 }
 
+@media screen and (min-width: 1900px) {
+
+  $slider-name: typing-slider;
+  $slides: 3;
+  $typing-duration: 3s;
+  $tab-letters: 35 40 54; //number of characters in each paragraph
+  $background: #f3f3f3;
+  $slider-font-size: 20px;
+  @keyframes slide {
+    #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
+    to { font-size: 0; letter-spacing: 0; }
+  }
+
+
+  
+
+}
+
 /* https://codepen.io/maxvoltar/pen/ZEzNYeM */
 
 
@@ -726,16 +778,6 @@
   animation-delay: -0.25s;
 }
 
-@keyframes dash {
-  0%,
-  50% {
-    stroke-dashoffset: 100%;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 /* https://dev.to/gscode/11-typewriter-effect-3p3c */
 
 
@@ -743,7 +785,6 @@ $slider-name: typing-slider;
 $slides: 3;
 $typing-duration: 3s;
 $tab-letters: 35 40 54; //number of characters in each paragraph
-$slider-font-size: 14px;
 $background: #f3f3f3;
 
 
@@ -767,10 +808,6 @@ $background: #f3f3f3;
   90%, to { width: 0; }
 }
 
-@keyframes slide {
-  #{100% / $slides} { font-size: $slider-font-size; letter-spacing: 1px; }
-  to { font-size: 0; letter-spacing: 0; }
-}
 
 .#{$slider-name} {
   text-align: center;
@@ -795,7 +832,7 @@ $background: #f3f3f3;
   border-left: 2px solid black;
   background-color: $background;
   animation: typing $typing-duration infinite,
-             cursor 1s infinite;
+            cursor 1s infinite;
 }
 
 @each $letters in $tab-letters {
@@ -806,6 +843,18 @@ $background: #f3f3f3;
       animation-delay: $typing-duration * ($i - 2);
       animation-timing-function: steps(#{$letters}), step-end;
     }
+  }
+}
+
+
+
+@keyframes dash {
+  0%,
+  50% {
+    stroke-dashoffset: 100%;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }
 

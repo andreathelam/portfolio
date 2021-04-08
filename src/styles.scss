@@ -301,6 +301,177 @@ body, html {
 
 }
 
+/* big screen*/
+@media screen and (min-width: 1900px) {
+
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 100%;
+        width: 90%;
+    }
+
+    .page_container {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 100%;
+        width: 80%;
+    }
+    #project_container {
+        margin-left: 20%;
+        margin-right: 10%;
+        height: 100%;
+        width: 70%
+    }
+    
+    h1 {
+        font-family: Nunito-Bold;
+        font-size: 55px;
+    }
+    h2 {
+        font-family: Nunito-Bold;
+        font-size: 35px;
+    }
+    h3 {
+        font-family: Nunito-Bold;
+        font-size: 24px;
+    }
+    h4{
+        font-family: Nunito-Italic;
+        font-style: italic;
+        font-size: 24px;
+    }
+    h5 {
+        font-family: Nunito-ExtraBold;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    p {
+        font-family: Nunito-Regular;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    li {
+        font-family: Nunito-Regular;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+
+    #mobile_overlay {
+        display: none;
+    }
+    #mobile_header {
+        display: none;
+    }
+    #header {
+        width: 100%;
+        height: 80px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .inner_header {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0;
+    }
+    .logo_container {
+        display: table;
+        float: left;
+        height: 100%;
+    }
+    .logo_container a {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        :hover, :active {
+            background-color: #fce68c00;
+        }
+    }
+    .navmenu a:last-child {
+        padding-right: 0;
+    }
+    .navmenu {
+        float: right;
+        height: 100%;
+        display: table;
+    }
+    .navmenu li {
+        height: 100%;
+        padding: 0px 30px;
+        text-decoration: none;
+        display: table-cell;
+        font-size: 15px;
+        vertical-align: middle;
+        font-family: Nunito-SemiBold;
+    }
+    .navmenu li a {
+        text-decoration: none;
+        color: black;
+        
+        :hover, :active, :focus, :target{
+            background-color: #FCE58C;
+        }
+        .active {
+            background-color: #FCE58C;
+        }
+    }
+
+
+
+
+    .banner {
+      padding-top: 30px;
+    }
+    .banner hr {
+        margin-top: -40px;
+        margin-bottom: 50px;
+    }
+    #project_overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #project_overview .col1 {
+        width: 70%;
+        padding-right: 50px;
+    }
+    #project_overview .col2 {
+        width: 30%;
+        margin-left: 10px;
+    }
+    section {
+        margin-bottom: 30px;
+    }
+    .row5050 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row5050 .col1{
+        width: 50%;
+        padding-right: 80px;
+    }
+    .row5050 .col2{
+        width: 50%;
+        padding-left: 80px;
+    }
+    .pages {
+        display: flex;
+        flex-direction: row;
+    }
+    .pages .col {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+}
+
 /* FONTS */
 @font-face {
     font-family: Nunito-Bold;
