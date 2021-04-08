@@ -63,6 +63,8 @@ body, html {
         }
         p {
             margin-top: -10px;
+            font-size:14px;
+            line-height: 1.4;
         }
     }
     .banner {
@@ -122,6 +124,7 @@ body, html {
         }
         p {
             margin-top: -10px;
+            font-size:14px;
         }
     }
     .banner {
@@ -269,6 +272,9 @@ body, html {
     #project_overview .col2 {
         width: 30%;
         margin-left: 10px;
+        p {
+            font-size:14px;
+        }
     }
     section {
         margin-bottom: 30px;
@@ -301,7 +307,7 @@ body, html {
 
 }
 
-/* big screen*/
+/* large screen*/
 @media screen and (min-width: 1900px) {
 
     body {
@@ -348,12 +354,12 @@ body, html {
     }
     p {
         font-family: Nunito-Regular;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: normal;
     }
     li {
         font-family: Nunito-Regular;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: normal;
     }
 
@@ -440,6 +446,9 @@ body, html {
     #project_overview .col2 {
         width: 30%;
         margin-left: 10px;
+        p {
+            font-size:20px;
+        }
     }
     section {
         margin-bottom: 30px;
