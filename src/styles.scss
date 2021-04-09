@@ -172,17 +172,17 @@ body, html {
     }
     h5 {
         font-family: Nunito-ExtraBold;
-        font-size: 17px;
+        font-size: 18px;
         letter-spacing: 2px;
     }
     p {
         font-family: Nunito-Regular;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: normal;
     }
     li {
         font-family: Nunito-Regular;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: normal;
     }
 
@@ -305,7 +305,7 @@ body, html {
 }
 
 /* large screen*/
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1400px) {
 
     body {
         margin-left: 5%;
