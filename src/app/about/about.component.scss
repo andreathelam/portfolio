@@ -6,13 +6,11 @@
         margin-bottom: 20px;
 
         .portrait {
-            width: 70%;
             align-self: center;
             display: flex;
             justify-content: center;
             img {
                 align-items: center;
-                padding-bottom: 10px;
                 object-fit: contain;
             }
 
