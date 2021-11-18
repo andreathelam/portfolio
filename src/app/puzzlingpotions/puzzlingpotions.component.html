@@ -1,0 +1,236 @@
+<app-navbar></app-navbar>
+
+<body> 
+
+<div class="page_container">
+
+
+    <section class="grow_title">
+        <picture>
+            <source media="(min-width: 1900px)" srcset="assets/potions/potions_hero_big.png" alt="stardew journal hero" class="responsive">
+            <source media="(min-width: 992px)" srcset="assets/potions/potions_hero.png" alt="stardew journal hero" class="responsive">
+            <source media="(min-width: 600px)" srcset="assets/potions/potions_hero_med.png"  alt="stardew journal hero" class="responsive">
+            <source media="(max-width: 599px)" srcset="assets/potions/potions_hero_sm.png" alt="stardew journal hero" class="responsive">
+            <img src="assets/potions/potions_hero.png" alt="puzzling potions hero" class="responsive">
+        </picture>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section" href="project_overview" id="project_overview">
+        <div class="col1">
+            <h5><mark><strong>OVERVIEW</strong></mark></h5>
+            <p>During my internship at <em>Jam City</em>, I worked on their award-winning mobile game, <em>Harry Potter Hogwarts Mystery</em>, focusing on a new feature called <strong>Puzzling Potions</strong>. In this event, players <strong>collect bottles</strong> from classes and use these bottles to <strong>uncover spaces</strong> on a grid to look for <strong>ingredients</strong> used to <strong>brew potions</strong>. </p>
+            <p>With the help of two other UI/UX designers on the team, we cycled through many <strong>layouts</strong> to find the best one for the players’ experience, created <strong>prototypes</strong> to explore various mechanics for the feature, and conducted <strong>tests</strong> with long-time players to understand their reactions and thoughts.</p>
+        </div>
+        <div class="col2">
+            <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
+            <p><strong>Game UI Design</strong></p>
+            <p><em>Screen Flows, Wireframes & Prototypes, Cognitive Walkthroughs, Visual Design</em></p>
+            <p>Team of 3</p>
+            <hr>
+            <p><em>June 2021 - Aug 2021</em></p>
+        </div>
+    </section>
+
+    <!-- UNDERSTANDING THE USER -->
+    <section class="section" href="user" id="user">
+        <div class="banner">
+            <h1 style="color: #003c4a;">Understanding the User</h1>
+            <hr>    
+        </div>
+
+        <h4><mark><strong><u>Survey</u></strong></mark></h4>
+        <p>To understand the perspectives and needs from other players, I conducted a survey and posted it on the Stardew Valley subreddit. The responses I received covered a wide range of players from the console, mobile, and pc platforms and from people who have been playing for 2 months to 4 years. </p>
+        <h3>What I learned from the Survey</h3>
+        <img src="assets/sdv/sdv_survey.png" alt="survey stats" class="responsive">
+        <br>
+        <h4><mark><strong><u>Personas</u></strong></mark></h4>
+        <p>Asking for the processes players used when planning their tasks and managing their farms, I categorized the responses into 3 general groups based on what aspect of the game is focused on and the players’ needs. These are the crafted personas.</p>        
+        <div class="sdv_personas">
+            <div class="box">
+                <img src="assets/sdv/persona_scheduler.png" alt="scheduler persona" class="responsive">
+            </div>
+            <div class="box">
+                <img src="assets/sdv/persona_friend.png" alt="friend persona" class="responsive">
+            </div>
+            <div class="box">
+                <img src="assets/sdv/persona_forgetful.png" alt="forgetful persona" class="responsive">
+            </div>
+        </div>
+        <br>
+        <h3>What I learned from the Personas</h3>
+        <p>With so many aspects of the game players can focus on, there were a variety of wants and needs. However, the most common need was the use of lists to plan and organize their gameplay. Therefore, I focused on incorporating the ability to create multiple types of lists and the flexibility to group and customize those lists. Moreover, nearly all survey participants referred to the Stardew Wiki page for gameplay information such as bundle items and NPC likes/dislikes; therefore, I planned to include that information directly on the application.</p>
+    </section>
+
+    <!-- BUILDING THE STRUCTURE -->
+    <section class="section" href="structure" id="structure">
+        <div class="banner">
+            <h1 style="color: #003c4a;">Building the Structure</h1>
+            <hr>
+        </div>
+
+        <h4><mark><u><strong>Task Flow</strong></u></mark></h4>
+        <p>By visualizing the tasks the user should be able to do when using the application, I created two task flows to identify and understand how the user would navigate through Stardew Journal.
+            This acted as a guide for determining the functional requirements and the navigational links for the wireframes.
+        </p>
+        <h3>Create a new list and add it to a folder</h3>
+        <img src="assets/sdv/sdv_listtask.png" alt="task flow for creating lists" class="responsive">
+        <h3>Add a widget to the home screen</h3>
+        <img src="assets/sdv/sdv_widgettask.png" alt="task flow for creating lists" class="responsive">
+
+
+    </section>
+
+    <!-- LAYING THE FOUNDATION -->
+    <section class="section" id="sketches">
+        <div class="banner">
+            <h1 style="color: #003c4a;">Laying the Foundation</h1>
+            <hr> 
+        </div>
+
+        <h4><mark><u><strong>Requirements</strong></u></mark></h4>
+        <ul>
+            <li>Widgets Interface
+                <ul>
+                    <li>The user can choose from a set list of templates (community bundles, characters, etc) to add to their home view or to add their own lists as a widget.</li>
+                </ul>
+            </li>
+            <li>Calendar View
+                <ul>
+                    <li>The Calendar view will include birthdays and festival dates from each season. The user will also be able to add notes onto the calendar.</li>
+                </ul>
+            </li>
+            <li>Create lists of multiple types
+                <ul>
+                    <li>The user will have the option to create different kinds of lists, chooseing from checklists, bullets, and numbered. These lists will include a title and the folder it’s in.</li>
+                </ul>
+            </li>
+            <li>Folder and subfolders
+                <ul>
+                    <li>The user will be able to place their lists in folders and sub-folders for organization.</li>
+                </ul>
+            </li>
+            <li>Reminders
+                <ul>
+                    <li>The user will be able to add to the reminders lists that will be easily accessible from the tab menu</li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        <h4><mark><u><strong>Low-Fi Wireframes</strong></u></mark></h4>
+        <img src="assets/sdv/sdv_lowfi.png" alt="project cupid wireframes" class="responsive">
+
+    
+    </section>
+
+    <!-- BUILDING THE BRAND -->
+    <section class="section" id="branding">
+        <div class="banner">
+            <h1 style="color: #003c4a;">Building the Brand</h1>
+            <hr>
+        </div>
+        <p>When creating the brand, I wanted to incorporate the cute, pixel art style from the game, along with a conventional feel of writing in a journal or notebook. I transformed line art icons into a pixelated version and included artwork from the game.</p>
+        <div class="row5050">
+            <div class="left">                
+                <h4><mark><u><strong>THE LOGOS & ASSETS</strong></u></mark> - Retro, Familiar</h4>
+                <img src="assets/sdv/sdv_assets.png" alt="brand colors" class="responsive">
+            </div>
+            <hr>
+
+            <div class="right">
+                <h4><mark><u><strong>THE TYPOGRAPHY</strong></u></mark> - 8-bit, Old-fashioned</h4>
+                <img src="assets/sdv/sdv_font.png" alt="fonts" >
+
+                <hr style="margin-top: 50px; margin-bottom: 50px;">
+
+                <h4><mark><u><strong>THE COLORS</strong></u></mark> - Playful, Fun, Mellow</h4>
+                <img src="assets/sdv/sdv_colors.png" alt="logo and assets"  class="responsive">
+            </div>
+        </div>
+    </section>
+
+    <!-- PUTTING IT ALL TOGETHER -->
+    <section class="section" id="prototypes">
+        <div class="banner">
+            <h1 style="color: #003c4a;">Putting it All Together</h1>
+            <hr>
+        </div>
+
+        <h4><mark><u><strong>Hi-Fi Wireframes</strong></u></mark></h4>
+
+        <div class="row5050">
+            <div class="col">
+                <h4>Widget Home Screen</h4>
+                <p>The user will be able to customize and personalize their Home screens to display easy-to-view and easy-to-access widgets for important information and lists. When making any edits, there will be a pop-up modal that will confirm their decision.</p>
+            </div>
+    
+            <div class="col_img">
+                <img src="assets/sdv/sdv_widget.png" alt="home screen" class="responsive">
+            </div>
+        </div>
+
+        <div class="row5050">
+            <div class="col">
+                <h4>Calendar View</h4>
+                <p>Stardew Journal will provide information, such as NPCs’ birthdays and festival days on each season’s calendar. The user will also have the ability to add their own to-dos or events onto each date.</p>
+            </div>
+    
+            <div class="col_img">
+                <img src="assets/sdv/sdv_cal.png" alt="calendar view" class="responsive">
+            </div>
+        </div>
+
+        <div class="row5050">
+            <div class="col">
+                <h4>Create Lists (Bullet, Numbered, Checkbox)</h4>
+                <p>The user will be able to create their own lists and organize them in folders. For decorative and familiarity purposes, they will also have the ability to insert icons and images of the various items from the game.</p>
+            </div>
+    
+            <div class="col_img">
+                <img src="assets/sdv/sdv_lists.png" alt="home screen" class="responsive">
+            </div>
+        </div>
+
+        <div class="row5050">
+            <div class="col">
+                <h4>Pre-made Templates</h4>
+                <p>The user will have an option to add pre-made templates with the information of NPCs and Community Center bundles. These lists can be added into a folder or on the home screen as a widget. By providing this information, the user will not need to do their own research and can use these lists to record their progress. </p>
+            </div>
+    
+            <div class="col_img">
+                <img src="assets/sdv/sdv_templates.png" alt="home screen" class="responsive">
+            </div>
+        </div>
+
+
+        <div class="row5050">
+            <div class="col">
+                <h4>Reminders</h4>
+                <p>Stardew Journal will automatically generate a list of reminders of any unchecked items from the user's notes. Clicking on each reminder will lead them to the list.</p>
+            </div>
+    
+            <div class="col_img">
+                <img src="assets/sdv/sdv_reminders.png" alt="home screen" class="responsive">
+            </div>
+        </div>
+
+        <a href="https://www.figma.com/proto/WhWaNPnq4rjOqhZF9EriDh/Stardew-Journal?node-id=106%3A8776&scaling=scale-down&page-id=67%3A700" target="_blank"><h4><u><em>Interact with my prototype</em></u></h4></a>
+       
+        
+
+            <br>
+        <h4><mark><u><strong>Takeaways</strong></u></mark></h4>
+        <p>As I was transitioning from the low-fi wireframes to hi-fi wireframes, I referred back to the task flows often. This taught me the importance of planning the interactions and decisions the user can take, in order to determine the key pages for the application. Since this application was designed to be a flexible management tool, there were many different approaches to how list data could be displayed, and the design I created was aimed to have a balance of flexibility and some structure. My next steps would be to conduct user testing to determine whether the flow of the application is understandable and familiar.
+        </p>
+    </section>
+
+<app-viewmoremenu></app-viewmoremenu>
+
+<app-footer></app-footer>
+
+</div>
+
+</body>
+
+
+

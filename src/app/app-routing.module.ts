@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { GrowComponent } from './grow/grow.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectcupidComponent } from './projectcupid/projectcupid.component';
+import { PuzzlingpotionsComponent } from './puzzlingpotions/puzzlingpotions.component';
 import { StardewjournalComponent } from './stardewjournal/stardewjournal.component';
 import { Surviving2020Component } from './surviving2020/surviving2020.component';
 
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'grow', component: GrowComponent },
   { path: 'surviving2020', component: Surviving2020Component },
   { path: 'project-cupid', component: ProjectcupidComponent },
-  { path: 'stardew-journal', component: StardewjournalComponent }
+  { path: 'stardew-journal', component: StardewjournalComponent },
+  { path: 'puzzling-potions', component: PuzzlingpotionsComponent }
 ];
 
 const routerOptions: ExtraOptions = {
