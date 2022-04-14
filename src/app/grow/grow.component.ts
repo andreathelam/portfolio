@@ -24,7 +24,7 @@ export class GrowComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.data.changeName(["Project Cupid", "#CFB5D0", "project-cupid"], ["Puzzling Potions","#F5B971", "puzzling-potions"], ["Stardew Journal", "#CFB5D0", "stardew-journal"], ["Surviving2020", "#F0B8BF", "surviving2020"])
+    this.data.changeName(["Project Cupid", "#CFB5D0", "project-cupid"], ["Puzzling Potions","#F5B971", "puzzling-potions"], ["Stardew Journal", "#CFB5D0", "stardew-journal"], ["Warhawk", "#bde9f2", "warhawk-redesign"])
     this.subscription = this.data.currentN1.subscribe(n1 => this.n1 = n1)
     this.subscription = this.data.currentN2.subscribe(n2 => this.n2 = n2)
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)

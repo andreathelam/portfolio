@@ -1,0 +1,18 @@
+mark {
+    background-color: #99c5ff;
+}
+
+.text-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+    .redesign-text {
+        width: 28%;
+    }
+
+    .redesign-img {
+        width: 70%;
+    }
+}

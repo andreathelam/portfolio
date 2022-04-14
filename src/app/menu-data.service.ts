@@ -16,6 +16,7 @@ export class MenuDataService {
   currentN4 = this.n4.asObservable();
 
 
+
   constructor() { }
 
   changeName(n1:Array<string>, n2:Array<string>, n3:Array<string>, n4:Array<string>) {

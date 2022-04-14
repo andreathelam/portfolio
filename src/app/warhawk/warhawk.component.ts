@@ -3,11 +3,11 @@ import { Subscription } from 'rxjs';
 import { MenuDataService } from '../menu-data.service';
 
 @Component({
-  selector: 'app-puzzlingpotions',
-  templateUrl: './puzzlingpotions.component.html',
-  styleUrls: ['./puzzlingpotions.component.scss']
+  selector: 'app-warhawk',
+  templateUrl: './warhawk.component.html',
+  styleUrls: ['./warhawk.component.scss']
 })
-export class PuzzlingpotionsComponent implements OnInit {
+export class WarhawkComponent implements OnInit {
 
   n1:Array<string>;
   n2:Array<string>;
@@ -18,7 +18,7 @@ export class PuzzlingpotionsComponent implements OnInit {
   constructor(private data: MenuDataService) { }
 
   ngOnInit(): void {
-    this.data.changeName(["Stardew Journal", "#CFB5D0", "stardew-journal"], ["Warhawk", "#bde9f2", "warhawk-redesign"], ["Surviving2020", "#F0B8BF", "surviving2020"], ["grow", "#A3DDCB", "grow"])
+    this.data.changeName(["Surviving2020", "#F0B8BF", "surviving2020"], ["grow", "#A3DDCB", "grow"], ["Project Cupid", "#CFB5D0", "project-cupid"], ["Puzzling Potions","#F5B971", "puzzling-potions"])
     this.subscription = this.data.currentN1.subscribe(n1 => this.n1 = n1)
     this.subscription = this.data.currentN2.subscribe(n2 => this.n2 = n2)
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)
@@ -31,4 +31,3 @@ export class PuzzlingpotionsComponent implements OnInit {
   }
 
 }
-

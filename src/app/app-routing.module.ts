@@ -7,6 +7,7 @@ import { ProjectcupidComponent } from './projectcupid/projectcupid.component';
 import { PuzzlingpotionsComponent } from './puzzlingpotions/puzzlingpotions.component';
 import { StardewjournalComponent } from './stardewjournal/stardewjournal.component';
 import { Surviving2020Component } from './surviving2020/surviving2020.component';
+import { WarhawkComponent } from './warhawk/warhawk.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'surviving2020', component: Surviving2020Component },
   { path: 'project-cupid', component: ProjectcupidComponent },
   { path: 'stardew-journal', component: StardewjournalComponent },
-  { path: 'puzzling-potions', component: PuzzlingpotionsComponent }
+  { path: 'puzzling-potions', component: PuzzlingpotionsComponent },
+  { path: 'warhawk-redesign', component: WarhawkComponent }
 ];
 
 const routerOptions: ExtraOptions = {

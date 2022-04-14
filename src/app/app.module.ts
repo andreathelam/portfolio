@@ -19,6 +19,7 @@ import { ProjectcupidComponent } from './projectcupid/projectcupid.component';
 import { StardewjournalComponent } from './stardewjournal/stardewjournal.component';
 import { ViewmoremenuComponent } from './viewmoremenu/viewmoremenu.component';
 import { PuzzlingpotionsComponent } from './puzzlingpotions/puzzlingpotions.component';
+import { WarhawkComponent } from './warhawk/warhawk.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PuzzlingpotionsComponent } from './puzzlingpotions/puzzlingpotions.comp
     StardewjournalComponent,
     ViewmoremenuComponent,
     PuzzlingpotionsComponent,
+    WarhawkComponent,
   ],
   imports: [
     BrowserModule,
