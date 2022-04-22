@@ -516,6 +516,20 @@ mark {
     width: 100%;
     height: auto;
 }
+a {
+    font-family: Nunito-SemiBold;
+    color: #003c4a;
+    text-align: center;
+    
+}
+a:hover, a:active, a:visited {
+    color: #d6b121;
+    text-decoration-color: #d6b121;
+}
+.link-center {
+    text-align: center;
+    margin-bottom: 1em;
+}
 .logo_container a {
     :hover, :active {
         background-color: #fce68c00;

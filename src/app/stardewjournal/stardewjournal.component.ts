@@ -18,7 +18,7 @@ export class StardewjournalComponent implements OnInit, OnDestroy {
   constructor(private data: MenuDataService) { }
 
   ngOnInit(): void {
-    this.data.changeName(["Warhawk","#bde9f2", "warhawk-redesign"], ["Surviving2020", "#F0B8BF", "surviving2020"], ["Project Cupid", "#CFB5D0", "project-cupid"], ["grow", "#A3DDCB", "grow"])
+    this.data.changeName(["Surviving2020", "#F0B8BF", "surviving2020"], ["grow", "#A3DDCB", "grow"], ["Puzzling Potions","#F5B971", "puzzling-potions"], ["Pollinate", "#A9C5A8", "pollinate"])
     this.subscription = this.data.currentN1.subscribe(n1 => this.n1 = n1)
     this.subscription = this.data.currentN2.subscribe(n2 => this.n2 = n2)
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)
