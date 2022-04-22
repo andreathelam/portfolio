@@ -1,0 +1,27 @@
+.quotes-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.quote-box {
+    width: 45%;
+    background-color: #CCE2ED;
+    padding: 1em;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        line-height: 1em;
+        color: rgb(76, 76, 76)
+    }
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+#right {
+    margin-left: auto;
+    margin-right: 0;
+}
