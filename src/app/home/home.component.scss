@@ -173,12 +173,12 @@
     padding-bottom: 20px;
 
 
-    &:active,
-    &.hover {
-      figure {
-        transform: rotateY(180deg);
-      }
-    }
+    // &:active,
+    // &.hover {
+    //   figure {
+    //     transform: rotateY(180deg);
+    //   }
+    // }
 
     figure {
       position: relative;
