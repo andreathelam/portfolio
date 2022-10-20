@@ -21,6 +21,7 @@ import { ViewmoremenuComponent } from './viewmoremenu/viewmoremenu.component';
 import { PuzzlingpotionsComponent } from './puzzlingpotions/puzzlingpotions.component';
 import { WarhawkComponent } from './warhawk/warhawk.component';
 import { PollinateComponent } from './pollinate/pollinate.component';
+import { WebDesignComponent } from './web-design/web-design.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { PollinateComponent } from './pollinate/pollinate.component';
     PuzzlingpotionsComponent,
     WarhawkComponent,
     PollinateComponent,
+    WebDesignComponent,
   ],
   imports: [
     BrowserModule,

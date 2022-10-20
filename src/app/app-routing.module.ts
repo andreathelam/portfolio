@@ -9,6 +9,7 @@ import { StardewjournalComponent } from './stardewjournal/stardewjournal.compone
 import { Surviving2020Component } from './surviving2020/surviving2020.component';
 import { WarhawkComponent } from './warhawk/warhawk.component';
 import { PollinateComponent } from './pollinate/pollinate.component';
+import { WebDesignComponent } from './web-design/web-design.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'stardew-journal', component: StardewjournalComponent },
   { path: 'puzzling-potions', component: PuzzlingpotionsComponent },
   { path: 'warhawk-redesign', component: WarhawkComponent },
-  { path: 'pollinate', component: PollinateComponent }
+  { path: 'pollinate', component: PollinateComponent },
+  { path: 'web-design', component: WebDesignComponent }
 ];
 
 const routerOptions: ExtraOptions = {
