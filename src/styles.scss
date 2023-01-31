@@ -29,7 +29,7 @@ body, html {
     }
     h4{
         font-family: Nunito-Italic;
-        letter-spacing: 1px;
+        //letter-spacing: 1px;
     }
     h5 {
         font-family: Nunito-ExtraBold;
@@ -498,7 +498,16 @@ body, html {
     font-family: Nunito-SemiBold;
     src: url(~/assets/font/Nunito-SemiBold.ttf) format("truetype");
 }
-strong { font-family: Nunito-Bold; }
+strong { 
+    font-family: Nunito-Bold; 
+
+    mark & {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+}
+
 
 
 mark {
