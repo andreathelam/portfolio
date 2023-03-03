@@ -5,6 +5,19 @@ body, html {
     scroll-behavior: smooth;
   
 }
+
+
+  
+
+
+#img_cursor {
+    cursor: pointer;
+}
+.vid_container {
+    cursor: pointer;
+}
+
+
 /* small screen*/
 @media screen and (max-width: 599px) {
     body {
@@ -29,7 +42,6 @@ body, html {
     }
     h4{
         font-family: Nunito-Italic;
-        //letter-spacing: 1px;
     }
     h5 {
         font-family: Nunito-ExtraBold;
@@ -97,7 +109,7 @@ body, html {
     }
     h4{
         font-family: Nunito-Italic;
-        letter-spacing: 1px;
+        font-size: 18px;
     }
     h5 {
         font-family: Nunito-ExtraBold;
@@ -147,6 +159,59 @@ body, html {
         height: 100%;
         width: 80%;
     }
+
+     /* Image popup */
+    #pop_up {
+        display: none;
+        position: fixed;
+        z-index: 20; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.803);
+        justify-content: center;
+        flex-direction: row;
+
+        #image_enlarged {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        -webkit-animation: fadeIn .5s;
+        animation: fadeIn .5s;
+
+        #close_btn {
+            margin-top: 1em;
+            margin-right: auto;
+            margin-left: auto;
+            cursor: pointer;
+            width: 3%;
+            height: auto;
+
+
+            img{
+                width: 100%;
+                height: auto;
+                
+            }
+        }
+
+        #imgsrc {
+            // width: 90%;
+            height:auto;
+            overflow: hidden;
+            object-fit: contain;
+        
+        }
+        }
+
+    }
+  
+
     #project_container {
         margin-left: 20%;
         margin-right: 10%;
@@ -164,25 +229,25 @@ body, html {
     }
     h3 {
         font-family: Nunito-Bold;
-        font-size: 18px;
+        font-size: 20px;
     }
     h4{
         font-family: Nunito-Italic;
-        font-size: 20px;
+        font-size: 22px;
     }
     h5 {
         font-family: Nunito-ExtraBold;
-        font-size: 18px;
+        font-size: 20px;
         letter-spacing: 2px;
     }
     p {
         font-family: Nunito-Regular;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: normal;
     }
     li {
         font-family: Nunito-Regular;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: normal;
     }
 
@@ -320,6 +385,53 @@ body, html {
         height: 100%;
         width: 80%;
     }
+
+     /* Image popup */
+    #pop_up {
+        display: none;
+        position: fixed;
+        z-index: 20; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.619);
+        justify-content: center;
+        flex-direction: row;
+
+        #image_enlarged {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        -webkit-animation: fadeIn .5s;
+        animation: fadeIn .5s;
+
+        #close_btn {
+            margin-left: 1em;
+            cursor: pointer;
+            width: 3%;
+            height: auto;
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        #imgsrc {
+            width: 90%;
+            height:auto;
+        
+        }
+        }
+
+    }
+  
+
     #project_container {
         margin-left: 20%;
         margin-right: 10%;
@@ -502,10 +614,17 @@ strong {
     font-family: Nunito-Bold; 
 
     mark & {
-        margin-left: .5em;
-        margin-right: .5em;
+        margin-left: .25em;
+        margin-right: .25em;
     }
 
+}
+
+h4 {
+    mark & {
+        margin-left: .25em;
+        margin-right: .25em;
+    }
 }
 
 
@@ -536,7 +655,7 @@ a:hover, a:active {
     text-decoration-color: #d6b121;
 }
 .link-center {
-    text-align: center;
+    //text-align: center;
     margin-bottom: 1em;
 }
 .logo_container a {

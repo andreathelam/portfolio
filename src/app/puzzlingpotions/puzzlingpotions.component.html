@@ -3,27 +3,27 @@
 <app-navbar></app-navbar>
 
 <head>
-     <!-- Enlarge Image when click -->
-     <script>
-        var app = angular.module("clickImg", []);
-        app.controller('EnlargeController', ['$scope', function ($scope) {
-            $scope.enlargeImg = function () {
-                alert("This is an example of ng-click");
-            }
-        }]);
-      </script>
 </head>
-<body ng-app="clickImg"> 
+<body> 
 
 <div class="page_container">
+
+    <div id="pop_up" onclick="closeImg(this)">
+        <div id="image_enlarged">
+            <img id="imgsrc" class="responsive"/>
+            <div id="close_btn">
+                <img src="assets/close_btn.png"/>
+            </div>
+        </div>
+    </div>
 
 
     <section class="grow_title">
         <picture>
-            <source media="(min-width: 1900px)" srcset="assets/potions/potions_hero_big.png" alt="stardew journal hero" class="responsive">
-            <source media="(min-width: 992px)" srcset="assets/potions/potions_hero.png" alt="stardew journal hero" class="responsive">
-            <source media="(min-width: 600px)" srcset="assets/potions/potions_hero_med.png"  alt="stardew journal hero" class="responsive">
-            <source media="(max-width: 599px)" srcset="assets/potions/potions_hero_sm.png" alt="stardew journal hero" class="responsive">
+            <source media="(min-width: 1900px)" srcset="assets/potions/potions_hero_big.png" alt="puzzling potions hero" class="responsive">
+            <source media="(min-width: 992px)" srcset="assets/potions/potions_hero.png" alt="puzzling potions hero" class="responsive">
+            <source media="(min-width: 600px)" srcset="assets/potions/potions_hero_med.png"  alt="puzzling potions hero" class="responsive">
+            <source media="(max-width: 599px)" srcset="assets/potions/potions_hero_sm.png" alt="puzzling potions hero" class="responsive">
             <img src="assets/potions/potions_hero.png" alt="puzzling potions hero" class="responsive">
         </picture>
     </section>
@@ -66,10 +66,14 @@
         </ul>
         <div class="sketches">
             <div class="sketch">
-                <img src="assets/potions/potions_sketches_1.png" alt="sketch 1" class="responsive">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_sketches_1.png')">
+                    <img src="assets/potions/potions_sketches_1.png" alt="sketch 1" class="responsive">
+                </div>
             </div>
             <div class="sketch">
-                <img src="assets/potions/potions_sketches_2.png" alt="sketch 2" class="responsive">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_sketches_2.png')">   
+                    <img src="assets/potions/potions_sketches_2.png" alt="sketch 2" class="responsive">
+                </div>
             </div>
         </div>
         <br>
@@ -82,7 +86,7 @@
         </ul>
         <p>To visualize our ideas, I created a screen flow to show how a player would navigate through the event based on the different options.</p>
         
-        <div ng-controller="EnlargeController">
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow.png')">   
             <img src="assets/potions/potions_screen_flow.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
         </div>
        
@@ -129,7 +133,7 @@
             Your browser does not support the video tag.
         </video> -->
         <div class="vid_container">
-            <iframe src="https://player.vimeo.com/video/650532232?h=873d051215&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay" referrerpolicy="no-referrer" ></iframe>
+            <iframe src="https://player.vimeo.com/video/650532232?h=873d051215&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&loop=1&autopause=0" allowfullscreen allow="autoplay" referrerpolicy="no-referrer" ></iframe>
         </div>
 
         <p>The prototype starts off with a scene that imitates a class lesson from the game. The players will tap on the tasks to collect bottles (pink, yellow, green), and the color depends on the color of the task. </p>
@@ -151,7 +155,7 @@
         </div>
         <p>We conducted cognitive walkthroughs with 6 players who have played the game on a regular basis and have been playing for at least a year.</p>
 
-        <h4><mark><u><strong>What we explored</strong></u></mark></h4>
+        <h4><mark>What we explored</mark></h4>
         <ul>
             <li>Is there an interest in this type of event?</li>
             <li>Is it intuitive and easy to understand?</li>
@@ -165,7 +169,7 @@
         </ul>
         <br>
 
-        <h4><mark><u><strong>What we learned</strong></u></mark></h4>
+        <h4><mark>What we learned</mark></h4>
         <ul>
             <li>Interest was high (“fun, engaging, inventive, fulfilling”)</li>
                 <ul>
@@ -194,13 +198,17 @@
             <hr> 
         </div>
 
-        <h4><mark><u><strong>Prototype A</strong></u></mark></h4>
+        <h4><mark>Prototype A</mark></h4>
         <div class="sketches">
             <div class="sketch">
-                <img src="assets/potions/potions_screen_1.png" alt="screen 1" class="responsive"/>
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_1.png')">   
+                    <img src="assets/potions/potions_screen_1.png" alt="screen 1" class="responsive"/>
+                </div>
             </div>
             <div class="sketch">
-                <img src="assets/potions/potions_screen_2.png" alt="screen 1" class="responsive"/>
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_2.png')">   
+                    <img src="assets/potions/potions_screen_2.png" alt="screen 1" class="responsive"/>
+                </div>
             </div>
         </div>
     
@@ -213,17 +221,21 @@
             <hr>
         </div>
 
-        <h4><mark><u><strong>Visual Design & Theming</strong></u></mark></h4>
+        <h4><mark>Visual Design & Theming</mark></h4>
         <h2 style="text-align: center; line-height: 1em;"><strong><em>How do we provide an immersive experience through theming?</em></strong></h2>
 
         <p>We wanted to stray away from numbering the layered spaces, so we explored ideas such as ice and spider webs to represent the multiple layers the player must uncover to get the ingredient. Also, to accommodate those with color-blindness, we wanted to incorporate symbols that go with the different colored squares and came up with various shapes for it.</p>
         
 
         <div class="sketch">
-            <img src="assets/potions/potions_symbols.png" alt="sketch 1" class="responsive">
+            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_symbols.png')">   
+                <img src="assets/potions/potions_symbols.png" alt="sketch 1" class="responsive">
+            </div>
         </div>
         <div class="sketch">
-            <img src="assets/potions/potions_tiles.png" alt="sketch 2" class="responsive">
+            <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_tiles.png')">   
+                <img src="assets/potions/potions_tiles.png" alt="sketch 2" class="responsive">
+            </div>
         </div>
    
     </section>

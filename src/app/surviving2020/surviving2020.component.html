@@ -2,6 +2,16 @@
 
 <body>
     <div class="page_container">
+
+        <div id="pop_up" onclick="closeImg(this)">
+            <div id="image_enlarged">
+                <img id="imgsrc"/>
+                <div id="close_btn">
+                    <img src="assets/close_btn.png"/>
+                </div>
+            </div>
+        </div>
+
         <section class="grow_title">
             <picture>
                 <source media="(min-width: 1900px)" srcset="assets/s20/surviving2020_hero_big.png" alt="surviving2020_hero hero" class="responsive">
@@ -35,7 +45,7 @@
             <hr>
         </div>
 
-        <h4><mark><u><strong>Project Requirements</strong></u></mark></h4>
+        <h4><mark>Project Requirements</mark></h4>
         <ul>
             <li>Access from a web browser
                 <ul>
@@ -63,11 +73,15 @@
                 </ul>
             </li>
         </ul>
-        <h4><mark><u><strong>Visualizing the Story</strong></u></mark></h4>
-        <img src="assets/s20/surviving_board.png" width="100%">
+        <h4><mark>Visualizing the Story</mark></h4>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/s20/surviving_board.png')">
+            <img src="assets/s20/surviving_board.png" width="100%">
+        </div>
         <p style="font-size:11px; opacity: 60%; float: right;"><em>via Milanote</em></p>
-        <h4><mark><u><strong>Visualizing the Art</strong></u></mark></h4>
-        <img src="assets/s20/surviving_moodboard.png" width="100%">
+        <h4><mark>Visualizing the Art</mark></h4>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/s20/surviving_moodboard.png')">
+            <img src="assets/s20/surviving_moodboard.png" width="100%">
+        </div>
         <p style="font-size:11px; opacity: 60%; float: right;"><em>via Milanote</em></p>
 
     </section>
@@ -84,7 +98,9 @@
             </div>
 
             <div class="col2">
-                <img src="assets/s20/surviving_art.png" alt="brand colors" width="100%">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/s20/surviving_art.png')">
+                    <img src="assets/s20/surviving_art.png" alt="brand colors" width="100%">
+                </div>
             </div>
         </div>
     </section>
@@ -102,7 +118,7 @@
                 <img src="assets/s20/surviving_walkthrough.gif" alt="playthrough gif">
             </div>
             <div class="col2">
-                <p>While navigating randomly-generated events, players must keep track of three main resources, Health, Happiness, and Money. These events are based on many of the shared experiences and frustrations that people have gone through during the pandemic, such as "losing your job" or "making banana bread" and will increase or decrease the player's resources. Each screen consists of descriptive text and hyperlink(s) that will lead the player to the next passage.
+                <p style="margin-top: -1em;">While navigating randomly-generated events, players must keep track of three main resources, Health, Happiness, and Money. These events are based on many of the shared experiences and frustrations that people have gone through during the pandemic, such as "losing your job" or "making banana bread" and will increase or decrease the player's resources. Each screen consists of descriptive text and hyperlink(s) that will lead the player to the next passage.
         Every action the player takes gives the player a chance of receiving Covid-19, and if players run out of their resources, they also are given a loss and will need to restart the game. To survive the game, players must last multiple rounds without emptying their resources until the vaccine has developed and they can receive it.
             </p>
             </div>
@@ -112,16 +128,16 @@
             <a href="https://archmagi.itch.io/surviving-2020" target="_blank"><h4><u><em>Play Surviving2020</em></u></h4></a>
         </div>
 
-        <h4><mark><u><strong>Takeaways</strong></u></mark></h4>
+        <h4><mark>Takeaways</mark></h4>
         <p>My team was unfamiliar with the structure of Twine, so we needed to learn and implement our game quickly while also encountering the challenges of working virtually. In this project course, we covered project management strategies, such as writing up a Work Breakdown Structure and following a Gantt Chart. I noticed a reoccurring problem was scope creep, of which we addressed through removing low-priority features or finding workarounds. The next steps for Surviving2020 would be to conduct user testing for quality assurance and revisions. </p>
     
-        <h4><mark><u><strong>What's Next?</strong></u></mark></h4>
+        <h4><mark>What's Next?</mark></h4>
         <p>In different class, a few members from this team and I decided to expand on this game concept, transforming it into an open-world survival RPG. Check out our game website and the full design document below.</p>
         <div class="link-center">
             <a href="https://boardatthome.wixsite.com/surviving2020" target="_blank"><u><em>Surviving2020 Website</em></u></a>
         </div>
         <div class="link-center">
-            <a href="https://docs.google.com/document/d/102NzOOKFoG-y42pTYdSZmkFS1GVhxn3C1i_Pd2VdYP0/edit?usp=sharing" target="_blank"><u><em>Surviving2020 Game Design Document</em></u></a>
+            <a href="https://docs.google.com/document/d/1whz7U3P2VfbGuu2Lz-hmlvAHh-36QXKkAa7TWqojXJM/edit?usp=sharing" target="_blank"><u><em>Surviving2020 Game Design Document</em></u></a>
         </div>
     </section>
 

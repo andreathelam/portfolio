@@ -22,6 +22,7 @@ import { PuzzlingpotionsComponent } from './puzzlingpotions/puzzlingpotions.comp
 import { WarhawkComponent } from './warhawk/warhawk.component';
 import { PollinateComponent } from './pollinate/pollinate.component';
 import { WebDesignComponent } from './web-design/web-design.component';
+import { NewworldComponent } from './newworld/newworld.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { WebDesignComponent } from './web-design/web-design.component';
     WarhawkComponent,
     PollinateComponent,
     WebDesignComponent,
+    NewworldComponent,
   ],
   imports: [
     BrowserModule,

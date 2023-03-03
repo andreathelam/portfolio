@@ -1,3 +1,16 @@
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 @media screen and (max-width: 599px) {
   .title_name {
     margin-top: 10%;
@@ -124,6 +137,10 @@
       }
     
 
+    }
+
+    #newworld_tile {
+      background-color: #dddddd;
     }
 
     #potions_tile {
@@ -356,6 +373,10 @@
       }
     
 
+    }
+
+    #newworld_tile {
+      background-color: #dddddd;
     }
 
     #potions_tile {
@@ -594,6 +615,10 @@
       }
     
 
+    }
+
+    #newworld_tile {
+      background-color: #dddddd;
     }
 
     #potions_tile {

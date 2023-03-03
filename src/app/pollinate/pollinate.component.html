@@ -5,6 +5,15 @@
 
 <div class="page_container">
 
+    <div id="pop_up" onclick="closeImg(this)">
+        <div id="image_enlarged">
+            <img id="imgsrc"/>
+            <div id="close_btn">
+                <img src="assets/close_btn.png"/>
+            </div>
+        </div>
+    </div>
+
 
     <section class="grow_title">
         <picture>
@@ -42,7 +51,7 @@
             <hr>    
         </div>
 
-        <h4><mark><u>How does gardening relate to wellness?</u></mark></h4>
+        <h4><mark>How does gardening relate to wellness?</mark></h4>
 
         <p>To better understand how effective gardening is to one's wellness, we conducted research online and found:  </p>
             <ul>
@@ -51,7 +60,7 @@
                 <br/><li>Gardening helps you eat more fresh fruits and vegetables, and you get to decide what kinds of fertilizers and pesticides come in contact with your food. — <em>Harvard Health Publishing</em></li>
             </ul>
       
-        <h4><mark><u>Method: Interviews</u></mark></h4>
+        <h4><mark>Method: Interviews</mark></h4>
         <p>We wanted to understand what our peers think about gardening and how approachable the activity is, so we conducted interviews with 4 young adults.</p>
         <!-- <p><em>Research Questions</em></p>
         <ol>
@@ -92,7 +101,7 @@
         <h2 style="text-align: center; line-height: 1em;"><strong><em>Even though gardening is a productive hobby, contributing to both physical and mental health, it can be hard for young adults to start and stick with it.</em></strong></h2>
         
 
-        <h4><mark><u>Method: Competitive Analysis</u></mark></h4>
+        <h4><mark>Method: Competitive Analysis</mark></h4>
         <p>We conducted a SWOT analysis on three mobile applications currently in the market.</p>
         <picture>
             <source media="(min-width: 1900px)" srcset="assets/pollinate/swot_big.png" alt="swot analysis" class="responsive">
@@ -111,14 +120,20 @@
             <hr>    
         </div>
 
-        <h4><mark><u><strong>User Stories</strong></u></mark></h4>
+        <h4><mark>User Stories</mark></h4>
         <img src="assets/pollinate/user_stories.png" alt="user stories" class="responsive">
 
-        <h4><mark><u><strong>Persona</strong></u></mark></h4>
+        <h4><mark>Persona</mark></h4>
         <p>With what we learned from the research, we created three personas to be used when creating our solution.</p>
-        <img src="assets/pollinate/persona1.png" alt="persona 1" class="responsive">
-        <img src="assets/pollinate/persona2.png" alt="persona 2" class="responsive">
-        <img src="assets/pollinate/persona3.png" alt="persona 3" class="responsive">
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/pollinate/persona1.png')">
+            <img src="assets/pollinate/persona1.png" alt="persona 1" class="responsive">
+        </div>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/pollinate/persona2.png')">
+            <img src="assets/pollinate/persona2.png" alt="persona 2" class="responsive">
+        </div>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/pollinate/persona3.png')">
+            <img src="assets/pollinate/persona3.png" alt="persona 3" class="responsive">
+        </div>
     </section>
 
     <!-- LAYING THE FOUNDATION -->
@@ -128,10 +143,11 @@
             <hr>
         </div>
 
-        <h4><mark><u><strong>Site Map</strong></u></mark></h4>
+        <h4><mark>Site Map</mark></h4>
         <img src="assets/pollinate/sitemap.png" width="100%">
-        <h4><mark><u><strong>Wireframes</strong></u></mark></h4>
+        <h4><mark>Wireframes</mark></h4>
         <img src="assets/pollinate/wireframes.png" width="100%">
+
     </section>
 
     <!-- BUILDING THE BRAND -->
@@ -157,7 +173,7 @@
             <hr>
         </div>
 
-        <h4><mark><u><strong>Final Mockups</strong></u></mark></h4>
+        <h4><mark>Final Mockups</mark></h4>
         <div class="mockups">
             <img src="assets/pollinate/mockups.png" alt="mockups" class="responsive">
         </div>

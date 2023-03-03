@@ -24,11 +24,20 @@ export class PuzzlingpotionsComponent implements OnInit {
     this.subscription = this.data.currentN3.subscribe(n3 => this.n3 = n3)
     this.subscription = this.data.currentN4.subscribe(n4 => this.n4 = n4)
 
+    enlargeImg();
+    closeImg();
+
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 
+}
+
+function enlargeImg() {
+}
+
+function closeImg() {
 }
 
