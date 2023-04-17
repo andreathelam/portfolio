@@ -32,8 +32,9 @@
     <section class="section" href="project_overview" id="project_overview">
         <div class="col1">
             <h5><mark><strong>OVERVIEW</strong></mark></h5>
-            <p>During my internship at <em>Jam City</em>, I worked on their award-winning mobile game, <em>Harry Potter Hogwarts Mystery</em>, focusing on a new feature called <strong>Puzzling Potions</strong>. In this event, players <strong>collect bottles</strong> from classes and use these bottles to <strong>uncover spaces</strong> on a grid to look for <strong>ingredients</strong> used to <strong>brew potions</strong>. </p>
-            <p>With the help of two other UI/UX designers on the team, we cycled through many <strong>layouts</strong> to find the best one for the players’ experience, created <strong>prototypes</strong> to explore various mechanics for the feature, and conducted <strong>tests</strong> with long-time players to understand their reactions and thoughts.</p>
+            <p>While I was at <em>Jam City</em>, I worked on their award-winning mobile game, <em>Harry Potter Hogwarts Mystery</em>, taking ownership of a new feature called <strong>Puzzling Potions</strong>. In this event, players <strong>collect bottles</strong> from classes and use these bottles to <strong>uncover spaces</strong> on a grid to look for <strong>ingredients</strong> used to <strong>brew potions</strong>. </p>
+            <p>The goal was to create a <strong>user-friendly</strong> mini game that is easy to navigate, <strong>fit seamlessly</strong> into the game visually, and provides an <strong>immersive, engaging experience</strong>.</p>
+            <p>Through a collaborative process between other UI/UX Designers, Game Designers, and Engineering, I cycled through many <strong>layouts</strong> and <strong>flows</strong>, created <strong>prototypes</strong> to explore various mechanics for the feature, and conducted <strong>tests</strong> with long-time players to gather feedback and validate design choices.</p>
         </div>
         <div class="col2">
             <h5><mark><strong>ROLE & DURATION</strong></mark></h5>
@@ -52,17 +53,13 @@
             <hr>    
         </div>
 
-        <p>Once the game design team provided us with the Puzzling Potions specs document, we went into brainstorming mode, exploring different layouts and flows with sketches.</p>
-        <h3>We started with the Main Event Screen. It needed to:</h3>
+        <p>Provided us with the Puzzling Potions game design document, I started exploring different layouts and flows with sketches.</p>
+        <h3>Requirements</h3>
         <ul>
-            <li>Be able to fit at least 4 potions</li>
-                <ul>
-                    <li>potion name</li>
-                    <li>a grid where the ingredients are hidden under</li>
-                    <li>ingredient silhouettes that will be filled in</li>
-                </ul>
-            <li>Include the Grand Prize</li>
-            <li>Include prizes for each potion completed</li>
+            <li>Players should be able to switch between at least 4 potions to work on</li>
+            <li>Players should have easy access to the game grid</li>
+            <li>Players should be able to comprehend their progression clearly</li>
+            <li>Players are aware of the grand prize and the rewards for each potion</li>
         </ul>
         <div class="sketches">
             <div class="sketch">
@@ -77,17 +74,56 @@
             </div>
         </div>
         <br>
-        <p>Ideally we wanted the whole event to be played on one screen, so the player would have immediate access to all the information needed, but it ended up being too cramped and uncomfortable for the player to navigate through. So we decided to separate the information into two screens.</p>        
-        <br>
-        <h3>From here, we ran into some questions:</h3>
+        <h3>From here, we encountered some challenges</h3>
         <ul>
-            <li>Should the player be able to work on multiple potions or one potion at a time?</li>
-            <li>Does each potion have its own grid or are ingredients for all potions under one grid?</li>
+            <li>Information Overload</li>
+            <li>Not flexible for Scalability </li>
+            <li>Lack of clarity on Game Progression</li>
+            <ul>            
+                <li>Should the player be able to work on multiple potions or one potion at a time?</li>
+                <li>Does each potion have its own grid or are ingredients for all potions under one grid?</li>
+            </ul>
+            
         </ul>
+        
+        <!-- <p>Ideally, all game components should fit on one screen, so the player would have immediate access to all the information needed, but it ended up being too cramped and uncomfortable for the player to navigate through. So it was decided to separate the information into two screens.</p>         -->
+
         <p>To visualize our ideas, I created a screen flow to show how a player would navigate through the event based on the different options.</p>
         
-        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow.png')">   
-            <img src="assets/potions/potions_screen_flow.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
+        <div class="heading_box">
+            <h3>1 Potion per Grid,<br>
+                Linear Progression
+            </h3>
+        </div>
+        <br>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow_1.png')">   
+            <img src="assets/potions/potions_screen_flow_1.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="heading_box">
+            <h3>1 Potion per Grid,<br>
+                Multiple Progression
+            </h3>
+        </div>
+        <br>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow_2.png')">   
+            <img src="assets/potions/potions_screen_flow_2.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="heading_box">
+            <h3>All Potions in 1 Grid,<br>
+                Linear Progression
+            </h3>
+        </div>
+        <br>
+        <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_flow_3.png')">   
+            <img src="assets/potions/potions_screen_flow_3.png" alt="screen flow" class="responsive" id="potions_flow" ng-click="enlargeImg(this)">
         </div>
        
 
@@ -97,18 +133,37 @@
     <section class="section" href="structure" id="structure">
         <div class="banner">
             <h1 style="color: #003c4a;">Exploring with Prototypes</h1>
-            <hr>
         </div>
 
-        <p>As we dove deeper into this feature, we came up with more ideas that would expand on the given specs. 
-            To explore these ideas, we created two interactive prototypes with a tool called Protopie that test the different types of mechanics, in order to figure out which provides the best player experience. Protopie allows for conditional logic, so we were able to make non-linear interactive prototypes. I worked mainly Prototype A, and my teammate, Sally, worked on Prototype B. </p>
-        <div class="proto_features">
+        <p>As we dove deeper into this feature, the game designer wanted to test various gameplay mechanics. 
+            To explore these ideas, two interactive prototypes were created with a tool called Protopie in order to figure out which provided the best player experience. Protopie allows for conditional logic to make non-linear interactive prototypes. I worked mainly Prototype A, and my teammate, Sally, worked on Prototype B. </p>
+        
+        <div class="quotes-row">
+            <div class="quote-box">
+                <h3>Prototype A</h3>
+                <ul>
+                    <li>Multiple Progression</li>
+                    <li>Single-space Removal</li>
+                    <li>Individually-layered Spaces</li>
+                    <li>Group-layered Spaces</li>
+                </ul>
+            </div>
+            <div class="quote-box">
+                <h3>Prototype B</h3>
+                <ul>
+                    <li>Linear Progression</li>
+                    <li>Tetris-shaped Removal</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- <div class="proto_features">
             <div class="col_container">
-                <div class="col">
+                <div class="col-1">
                     <h3>Prototype A</h3>
                     <ul>
                         <li>Multiple Progression</li>
-                        <li>Single Space Removal</li>
+                        <li>Single-space Removal</li>
                         <li>Individually-layered Spaces</li>
                         <li>Group-layered Spaces</li>
                     </ul>
@@ -116,7 +171,7 @@
                 
                 <hr>
 
-                <div class="col">
+                <div class="col-2">
                     <h3>Prototype B</h3>
                     <ul>
                         <li>Linear Progression</li>
@@ -125,7 +180,7 @@
                 </div>              
             </div>
             <p>Both prototypes included decoy ingredients and a NUX to guide the player.</p>
-        </div>
+        </div> -->
         <br>
         <br>
         <!-- <video autoplay controls class="responsive">
@@ -153,11 +208,11 @@
             <h1 style="color: #003c4a;">Player Testing</h1>
             <hr> 
         </div>
-        <p>We conducted cognitive walkthroughs with 6 players who have played the game on a regular basis and have been playing for at least a year.</p>
+        <p>Cognitive walkthroughs were conducted with 6 players who have played the game on a regular basis and have been playing for at least a year.</p>
 
-        <h4><mark>What we explored</mark></h4>
+        <h4><mark>What was explored</mark></h4>
         <ul>
-            <li>Is there an interest in this type of event?</li>
+            <li>Is there interest in this type of event?</li>
             <li>Is it intuitive and easy to understand?</li>
             <li>Is the 8x7 grid size (40px squares on iPhone X) large enough?</li>
             <li>Finalize design options for:</li>
@@ -169,13 +224,13 @@
         </ul>
         <br>
 
-        <h4><mark>What we learned</mark></h4>
+        <h4><mark>The Results</mark></h4>
         <ul>
             <li>Interest was high (“fun, engaging, inventive, fulfilling”)</li>
                 <ul>
                     <li>On a scale from 1 (not fun) to 5 (very fun), everyone, but one player, voted a 5 — the one voted a 4.5.</li>
                     <li>Players liked the critical thinking and strategic aspect of the feature.</li>
-                    <li>Overall, the event was easy to understand, but prototype A was easier than B.</li>
+                    <li>The event was easy to understand, but prototype A was easier than B.</li>
                 </ul>
             <li>There weren't any issues with grid size. Every player found it to be comfortable. </li>
             <li>There was preference with Multiple Progression.</li>
@@ -199,15 +254,16 @@
         </div>
 
         <h4><mark>Prototype A</mark></h4>
+        <p><em>Multiple Progression, Single-space Removal, Individually-layered Spaces</em></p>
         <div class="sketches">
-            <div class="sketch">
-                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_1.png')">   
-                    <img src="assets/potions/potions_screen_1.png" alt="screen 1" class="responsive"/>
-                </div>
-            </div>
             <div class="sketch">
                 <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_2.png')">   
                     <img src="assets/potions/potions_screen_2.png" alt="screen 1" class="responsive"/>
+                </div>
+            </div>
+            <div class="sketch">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potions_screen_1.png')">   
+                    <img src="assets/potions/potions_screen_1.png" alt="screen 1" class="responsive"/>
                 </div>
             </div>
         </div>
@@ -237,13 +293,29 @@
                 <img src="assets/potions/potions_tiles.png" alt="sketch 2" class="responsive">
             </div>
         </div>
+
+
+        <h4><mark>Shipped Game</mark></h4>
+        <p>With help from the art team, these are the finalized Puzzling Potion screens.</p>
+        <div class="sketches">
+            <div class="sketch">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potion_final_1.png')">   
+                    <img src="assets/potions/potion_final_1.png" alt="final ui potion select" class="responsive"/>
+                </div>
+            </div>
+            <div class="sketch">
+                <div id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/potions/potion_final_2.png')">   
+                    <img src="assets/potions/potion_final_2.png" alt="final ui game grid" class="responsive"/>
+                </div>
+            </div>
+        </div>
    
     </section>
 
     <!-- MY TAKEAWAY -->
     <section class="section" id="prototypes">
         <div class="banner">
-            <h1 style="color: #003c4a;">My Takeaway</h1>
+            <h1 style="color: #003c4a;">Takeaways</h1>
             <hr>
         </div>
 

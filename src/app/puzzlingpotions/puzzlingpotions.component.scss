@@ -3,7 +3,14 @@ mark {
     color: white;
 }
 
+
+
 @media screen and (max-width: 599px) {
+
+    #pop_up {
+        display: none !important;
+    }
+
     .sketches {
         display: flex;
         flex-direction: column;
@@ -17,6 +24,41 @@ mark {
             }
         }
     
+    }
+    .heading_box{
+        background-color: #003c4a;
+        padding: 2em;
+        h3 {
+            color: #f3f3f3;
+            margin-top: -1em;
+            margin-bottom: -1em;
+        }
+    } 
+    .quotes-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    
+        .quote-box {
+            width: 100%;
+            background-color: white;
+            padding: 1em;
+    
+            h1 {
+                margin: 0;
+                text-align: center;
+                line-height: 1em;
+                color: rgb(76, 76, 76)
+            }
+            p {
+                margin: 0;
+                text-align: center;
+            }
+            ul {
+                margin-left: -20px;
+            }
+        }
     }
 
     .proto_features {
@@ -36,7 +78,7 @@ mark {
         flex-direction: column;
         justify-content: space-between;
 
-        .col {
+        .col-1 {
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -75,6 +117,42 @@ mark {
         }
     
     }
+    .heading_box{
+        background-color: #003c4a;
+        padding: 2em;
+        width: fit-content;
+        h3 {
+            color: #f3f3f3;
+            margin-top: -1em;
+            margin-bottom: -1em;
+        }
+    } 
+    .quotes-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    
+        .quote-box {
+            width: 45%;
+            background-color: white;
+            padding: 1em;
+    
+            h1 {
+                margin: 0;
+                text-align: center;
+                line-height: 1em;
+                color: rgb(76, 76, 76)
+            }
+            p {
+                margin: 0;
+                text-align: center;
+            }
+            ul {
+                margin-left: -20px;
+            }
+        }
+    }
 
     .proto_features {
         width: 90%;
@@ -93,7 +171,7 @@ mark {
         flex-direction: row;
         justify-content: space-between;
 
-        .col {
+        .col-1 {
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -132,6 +210,42 @@ mark {
         }
     
     }
+    .heading_box{
+        background-color: #003c4a;
+        padding: 2em;
+        width: fit-content;
+        h3 {
+            color: #f3f3f3;
+            margin-top: -1em;
+            margin-bottom: -1em;
+        }
+    } 
+    .quotes-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    
+        .quote-box {
+            width: 45%;
+            background-color: white;
+            padding: 1em;
+    
+            h1 {
+                margin: 0;
+                text-align: center;
+                line-height: 1em;
+                color: rgb(76, 76, 76)
+            }
+            p {
+                margin: 0;
+                text-align: center;
+            }
+            ul {
+                margin-left: -20px;
+            }
+        }
+    }
 
     .proto_features {
         // width: 60%;
@@ -150,8 +264,10 @@ mark {
         flex-direction: row;
         justify-content: space-between;
 
-        .col {
+        .col-1 {
             padding-left: 20px;
+        }
+        .col-2 {
             padding-right: 20px;
         }
     }
