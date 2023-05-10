@@ -23,6 +23,9 @@ body, html {
     body {
         margin: 8px 15px;
     }
+    #close_btn {
+        display: none;
+    }
 
 
     h1 {
@@ -90,8 +93,9 @@ body, html {
     body {
         margin: 10px 30px;
     }
-
-
+    #close_btn {
+        display: none;
+    }
     h1 {
         font-family: Nunito-Bold;
         font-size: 38px;
