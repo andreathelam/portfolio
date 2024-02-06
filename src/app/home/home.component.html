@@ -7,6 +7,16 @@
 
 <div class="page_container">
 
+  <div id="pop_up" onclick="closeImg(this)">
+
+   <div id="image_enlarged">
+      <img id="imgsrc"/>
+      <img id="close_btn" src="assets/close_btn.png">
+      <!-- <h2 id="close_btn"><strong>x</strong></h2> -->
+    </div>
+  </div>
+
+
   <div class="title_name">
     <div id="cat">
       <img src="assets/cat.png" alt="pixel cat">
@@ -46,7 +56,7 @@
   <div class="typing-slider">
     <span class="item">UI & UX Designer </span>
     <span class="item">Graphic Designer </span>
-    <span class="item">Frontend Developer</span>
+    <span class="item">Web Developer  </span>
   </div>
 </div>
 
@@ -55,34 +65,81 @@
 <section class="projects_container" id="projects">
   <h2>Projects</h2>
   
+
   <div class="r1">
+
+
     <div class="p1">
-      <div class="project_tile" id="sdv_tile" [routerLink]="['/stardew-journal']">
-        <img src="assets/Stardew Journal_preview.png" width="400" alt="">
+      <div class="project_tile" id="newworld_tile" [routerLink]="['/new-world']">
+        <img src="assets/newworld_preview.png" alt="new world preview">
         <div class="overlay">
-          <div class="text"><h4>Stardew Journal</h4></div>
+          <div class="text"><h4>New World</h4></div>
         </div>
       </div>
       <ul class="project_tags">
-        <li>UI/UX  /  APP DESIGN  /  BRANDING</li>
+        <li>GAME UI ART</li>
       </ul>
     </div>
 
+
     <div class="p1">
-      <div class="project_tile" id="grow_tile" [routerLink]="['/grow']">
-        <img src="assets/grow_preview.png" width="400" alt="surviving2020 game">
+      <div class="project_tile" id="potions_tile" [routerLink]="['/puzzling-potions']">
+        <img src="assets/potions_preview.png" width="400" alt="puzzling potions feature">
         <div class="overlay">
-          <div class="text"><h4>grow</h4></div>
+          <div class="text"><h4>Puzzling Potions</h4></div>
         </div>
       </div>
       <ul class="project_tags">
-        <li>UI/UX  /  APP DESIGN  /  BRANDING</li>
+        <li>MOBILE UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;GAME FEATURE</li>
       </ul>
     </div>
     
   </div>
 
+
   <div class="r1">
+
+
+    <div class="p1">
+      <div class="project_tile" id="pollinate_tile" [routerLink]="['/pollinate']">
+        <img src="assets/pollinate_preview.png" alt="pollinate preview">
+        <div class="overlay">
+          <div class="text"><h4>Pollinate</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>MOBILE UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;1ST PLACE DESIGNATHON</li>
+      </ul>
+    </div>
+
+    <div class="p1">
+      <div class="project_tile" id="warhawk_tile" [routerLink]="['/warhawk-redesign']">
+        <img src="assets/warhawk_preview.png" alt="warhawk-redesign preview">
+        <div class="overlay">
+          <div class="text"><h4>Warhawk: UI Redesign</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>GAME UI/UX</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="r1">
+
+    <div class="p1">
+      <div class="project_tile" id="sdv_tile" [routerLink]="['/stardew-journal']">
+        <img src="assets/Stardew Journal_preview.png" alt="stardew preview">
+        <div class="overlay">
+          <div class="text"><h4>Stardew Journal</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>MOBILE UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PIXEL ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;BRANDING</li>
+      </ul>
+    </div>
+
     <div class="p1">
       <div class="project_tile" id="surviving2020_tile" [routerLink]="['/surviving2020']">
         <img src="assets/Surviving2020_preview.png" alt="project cupid app">
@@ -91,11 +148,23 @@
         </div>
       </div>
       <ul class="project_tags">
-        <li>GAME DESIGN  /  PIXEL ART  /  TWINE</li>
+        <li>GAME DESIGN&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;PIXEL ART&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;TWINE</li>
       </ul>
     </div>
 
-    <div class="p1">
+    <!-- <div class="p1">
+      <div class="project_tile" id="grow_tile" [routerLink]="['/grow']">
+        <img src="assets/grow_preview.png" width="400" alt="surviving2020 game">
+        <div class="overlay">
+          <div class="text"><h4>grow</h4></div>
+        </div>
+      </div>
+      <ul class="project_tags">
+        <li>MOBILE UI/UX&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;BRANDING</li>
+      </ul>
+    </div> -->
+
+    <!-- <div class="p1">
       <div class="project_tile" id="projectcupid_tile" [routerLink]="['/project-cupid']">
         <img src="assets/ProjectCupid_preview.png" width="400" alt="grow app">
         <div class="overlay">
@@ -105,7 +174,13 @@
       <ul class="project_tags">
         <li>UI/UX  /  WEB DESIGN</li>
       </ul>
-    </div>
+    </div> -->
+
+    <!-- <div class="p1">
+      <div class="project_tile" id="blank_tile">
+      </div>
+   
+    </div> -->
 
 
   </div>
@@ -116,61 +191,93 @@
 <hr style="text-align: center; margin-top:100px; margin-left:100px; margin-right:100px;">
 
 <section class="art_container" id="graphics">
+  
   <h2>Graphics</h2>
   
   <div class="graphics_row">
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+    <!--div class="portfolio-single" ontouchstart="this.classList.toggle('hover');"-->
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/UCHI_enlarged.png')">
       <figure>
         <img src="assets/graphics/UCHI.png" alt="University of California Holiday Invitational" />
-        <figcaption>
-          <h4>University of California Holiday Invitational</h4>
-        </figcaption>
       </figure>
     </div>
     
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+    <!-- <div class="portfolio-single">
       <figure>
-        <img src="assets/graphics/summer_camps.png" alt="UCI Esports Summer Camps" />
+        <img src="assets/graphics/stream_overlays.png" alt="UCI Esports Stream Overlays" />
+      </figure>
+    </div> -->
+  
+
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/ow_roster_enlarged.png')">
+      <figure>
+        <img src="assets/graphics/ow_roster.png" alt="Overwatch Roster" />
         <figcaption>
-          <h4>UCI Esports<br>Summer Camps</h4>
+          <h4>Overwatch Roster</h4>
         </figcaption>
       </figure>
     </div>
-    
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/lol_roster_enlarged.png')">
       <figure>
-        <img src="assets/graphics/fall_recruit.png"alt="UCI Esports Fall Recruitment" />
-        <figcaption>
-          <h4>UCI Esports<br>Fall Recruitment</h4>
-        </figcaption>
+        <img src="assets/graphics/lol_roster.png"alt="UCI Esports League of Legends Roster" />
       </figure>
     </div>
+
   </div>
+
+
   
   <div class="graphics_row">
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/jersey_enlarged.png')">
       <figure>
-        <img src="assets/graphics/OW_nationals.png" alt="Overwatch Collegiate Championship 2021" />
+        <img src="assets/graphics/jersey.png" alt="UCI Esports Official Jersey" />
         <figcaption>
-          <h4>Overwatch Collegiate Championship 2021</h4>
+          <h4>UCI Esports<br>Official Jersey</h4>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/player_banners_enlarged.png')">
+      <figure>
+        <img src="assets/graphics/player_banners.png" alt="League of Legends Player Banners" />
+        <figcaption>
+          <h4>League of Legends<br>Player Banners</h4>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="portfolio-single" id="img_cursor" onclick="enlargeImg(document.getElementById('pop_up'), 'assets/graphics/matches_enlarged.png')">
+      <figure>
+        <img src="assets/graphics/matches.png" alt="League of Legends Match graphic" />
+        <figcaption>
+          <h4>League of Legends Match Graphic</h4>
         </figcaption>
       </figure>
     </div>
     
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
+    <!-- <div class="portfolio-single">
       <figure>
         <img src="assets/graphics/esc.png" alt="Esports Conference" />
         <figcaption>
           <h4>Esports Conference</h4>
         </figcaption>
       </figure>
-    </div>
-    
-    <div class="portfolio-single" ontouchstart="this.classList.toggle('hover');">
-      
-    </div>
-  
+    </div> -->
+
+    <!-- <div class="portfolio-single">
+      <figure>
+        <img src="assets/graphics/OW_nationals.png" alt="Overwatch Collegiate Championship 2021" />
+        <figcaption>
+          <h4>Overwatch Collegiate Championship 2021</h4>
+        </figcaption>
+      </figure>
+    </div> -->
+          
   </div>
+
+
 
 </section>
 

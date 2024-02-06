@@ -18,6 +18,11 @@ import { Surviving2020Component } from './surviving2020/surviving2020.component'
 import { ProjectcupidComponent } from './projectcupid/projectcupid.component';
 import { StardewjournalComponent } from './stardewjournal/stardewjournal.component';
 import { ViewmoremenuComponent } from './viewmoremenu/viewmoremenu.component';
+import { PuzzlingpotionsComponent } from './puzzlingpotions/puzzlingpotions.component';
+import { WarhawkComponent } from './warhawk/warhawk.component';
+import { PollinateComponent } from './pollinate/pollinate.component';
+import { WebDesignComponent } from './web-design/web-design.component';
+import { NewworldComponent } from './newworld/newworld.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +37,11 @@ import { ViewmoremenuComponent } from './viewmoremenu/viewmoremenu.component';
     ProjectcupidComponent,
     StardewjournalComponent,
     ViewmoremenuComponent,
+    PuzzlingpotionsComponent,
+    WarhawkComponent,
+    PollinateComponent,
+    WebDesignComponent,
+    NewworldComponent,
   ],
   imports: [
     BrowserModule,

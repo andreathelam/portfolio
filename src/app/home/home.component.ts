@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,22 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  images;
+
 
   constructor() { 
+  
   }
 
   ngOnInit(): void {
 
-    this.images = [
-     
-    ]
+    enlargeImg();
+    closeImg();
+   
 
 
     }
+
   }
 
 
+  
 
 
+
+
+function enlargeImg() {
+}
+
+function closeImg() {
+}
 
